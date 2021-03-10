@@ -2,10 +2,10 @@ import React from 'react';
 import {  Col, Card, Button} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const League = (props) => {
-    const {strLeague, strSport } = props.league;
-   
+    const {idLeague, strLeague, strSport } = props.league;
     return (
         <div>
     <Col>
@@ -15,9 +15,12 @@ const League = (props) => {
   <Card.Body>
     <Card.Title><h1>{strLeague} </h1></Card.Title>
     <Card.Text>
-    <h3> {strSport}</h3>
+     {strSport}
     </Card.Text>
-    <Button variant="primary"> Explore   <FontAwesomeIcon icon={faArrowRight}/></Button>
+    <Link  to= {`/details/${idLeague}`}>
+    <Button  variant="primary"> Explore   <FontAwesomeIcon icon={faArrowRight}/></Button>
+    </Link>
+    
   </Card.Body>
 </Card>
 

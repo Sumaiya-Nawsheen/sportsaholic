@@ -3,10 +3,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 import Home from "./components/Home/Home";
-import League from "./components/League/League";
+import LeagueDetail from "./components/LeagueDetail/LeagueDetail";
 
 function App() {
   return (
@@ -17,9 +17,7 @@ function App() {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
+            
             <li>
               <Link to="/users">Users</Link>
             </li>
@@ -29,8 +27,8 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/details/:idLeague">
+            <LeagueDetail/>
           </Route>
           <Route path="/users">
             <Users />
@@ -45,9 +43,6 @@ function App() {
 };
 
 
-function About() {
-  return <h2>About</h2>;
-}
 
 function Users() {
   return <h2>Users</h2>;

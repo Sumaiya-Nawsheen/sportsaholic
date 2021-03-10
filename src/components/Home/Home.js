@@ -12,18 +12,20 @@ const Home = () => {
         .then (data => setLeagues(data.leagues))
     } ,[])
     
+// const showDetails = () => {
+
+// }
 
 
 
 
 
-    
     return (
         <div>
 <Container>
   <Row sm={1} md={2} lg={3} className="m-10">
      {
-         leagues.map( league => <League league={league}></League> )
+         leagues.map( league => <League league={league} key={league.idLeague}></League> )
      }
        
   </Row>
