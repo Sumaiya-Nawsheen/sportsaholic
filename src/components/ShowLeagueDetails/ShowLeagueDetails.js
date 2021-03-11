@@ -98,10 +98,10 @@ const ShowLeagueDetails = (props) => {
 
                 <div style={{ width: '100%', height: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
-                    <p style={iconStyle}><a href='https://www.google.com/' target="_blank">{icon.website}</a></p>
-                    <p style={iconStyle}><a href='https://www.facebook.com/' target="_blank">{icon.facebook}</a></p>
-                    <p style={iconStyle}><a href='https://twitter.com/' target="_blank"> {icon.twitter}</a> </p>
-                    <p style={iconStyle}><a href='https://www.youtube.com/' target="_blank"> {icon.youtube}</a> </p>
+                    <p style={iconStyle}><a href='https://www.google.com/' target="_blank" rel="noreferrer">{icon.website}</a></p>
+                    <p style={iconStyle}><a href='https://www.facebook.com/' target="_blank" rel="noreferrer">{icon.facebook}</a></p>
+                    <p style={iconStyle}><a href='https://twitter.com/' target="_blank" rel="noreferrer"> {icon.twitter}</a> </p>
+                    <p style={iconStyle}><a href='https://www.youtube.com/' target="_blank" rel="noreferrer"> {icon.youtube}</a> </p>
                 </div>
             </div>
         </div>
