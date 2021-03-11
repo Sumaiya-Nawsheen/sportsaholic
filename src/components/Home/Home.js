@@ -18,7 +18,7 @@ const Home = () => {
             <div >
                 <Jumbotron fluid style={{ marginBottom: '0px' }}>
                     <Container>
-                        <h1> Sportsaholic</h1>
+                        <h1> SPORTSAHOLIC</h1>
                     </Container>
                 </Jumbotron>
             </div>
