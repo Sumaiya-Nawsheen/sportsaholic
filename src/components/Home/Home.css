@@ -1,0 +1,20 @@
+.jumbotron{
+    background-image: url(../../images/Stadium.jpg);
+    background-repeat:no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+.jumbotron h1{
+color:rgb(204, 255, 204);
+text-align: center;
+font-family: 'Akaya Kanadaka', cursive;
+font-size: 6rem;
+}
+
+
